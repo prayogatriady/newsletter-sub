@@ -38,11 +38,11 @@ cd newsletter-sub
 3. Create `.env` file
 ```sh
 PROJECT_ID=your-gcp-projectId
-TOPIC_NAME=your-pubsub-topicName
+SUBSCRIPTION_NAME=your-pubsub-subscriptionName
 SENDER_MAIL=your-gmail@gmail.com
 SENDER_PASSWORD=your-gmail-app-password
 ```
-4. Move your `credential.json` to file the project root directory
+4. Move your `credential.json` file to the project root directory
 
 5. Get golang dependencies
 ```sh
@@ -54,7 +54,7 @@ go mod tidy
 go run .
 ```
 
-6. You should receive a message from the publisher repository.
+7. You should receive a message from the publisher repository.
 
 #### If you haven't sent a message. Let's move first to [the publisher repository.](https://github.com/prayogatriady/newsletter-pub)
 
